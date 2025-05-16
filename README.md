@@ -1,4 +1,4 @@
-# 💡 JupyterLab + Ollama
+# 💡 IA generativa no Jupyter JupyterLab + Jupyter AI
 
 Este projeto configura um ambiente de **JupyterLab com suporte a LLMs locais usando [Ollama](https://ollama.com/)**, integrando com o [Jupyter AI](https://github.com/jupyterlab/jupyter-ai) para permitir interação com modelos via chat.
 
