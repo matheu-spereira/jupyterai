@@ -1,0 +1,39 @@
+version: "3.8"
+
+services:
+  ollama:
+    image: ollama/ollama
+    container_name: ollama
+    ports:
+      - "11434:11434"
+    restart: always
+    volumes:
+      - ollama_data:/root/.ollama 
+    networks:
+      - dev-net
+    runtime: nvidia  # Adiciona o suporte ao runtime nvidia (necessário para usar GPUs)
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]  # Garante que o serviço utilize a GPU
+  jupyterlab:
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./workspace:/workspace
+    container_name: jupyterlab-ai
+    networks:
+      - dev-net
+    environment:
+      - OLLAMA_BASE_URL=http://ollama:11434
+
+
+networks:
+  dev-net:
+
+volumes:
+  ollama_data:
