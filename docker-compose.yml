@@ -25,6 +25,7 @@ services:
       - "8888:8888"
     volumes:
       - ./workspace:/workspace
+      - jupyter_data:/root/.local/share/jupyter
     container_name: jupyterlab-ai
     networks:
       - dev-net
@@ -37,3 +38,4 @@ networks:
 
 volumes:
   ollama_data:
+  jupyter_data:
