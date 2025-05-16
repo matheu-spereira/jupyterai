@@ -2,7 +2,7 @@
 
 Este projeto configura um ambiente de **JupyterLab com suporte a LLMs locais usando [Ollama](https://ollama.com/)**, integrando com o [Jupyter AI](https://github.com/jupyterlab/jupyter-ai) para permitir interação com modelos via chat.
 
-## 🧱 Tecnologias
+## 💻 Tecnologias
 
 - 🧪 JupyterLab + Jupyter AI
 - 🧠 Ollama (modelos LLM locais como `llama3`, `mistral`, etc.)
