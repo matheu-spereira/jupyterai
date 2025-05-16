@@ -4,7 +4,7 @@ Este projeto configura um ambiente de **JupyterLab com suporte a LLMs locais usa
 
 ## 🧱 Tecnologias
 
-- 🧪 JupyterLab
+- 🧪 JupyterLab + Jupyter AI
 - 🧠 Ollama (modelos LLM locais como `llama3`, `mistral`, etc.)
 - 🐳 Docker + Docker Compose
 
